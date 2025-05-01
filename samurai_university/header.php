@@ -52,6 +52,12 @@
                   </a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="<?php echo home_url(); ?>/courses">
+                    GRADUATES
+                    <p>卒業生の声</p>
+                  </a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="<?php echo home_url(); ?>/about_us">
                     ABOUT US
                     <p>侍大学について</p>

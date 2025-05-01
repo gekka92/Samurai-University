@@ -1,4 +1,4 @@
-<? php
+<?php
 /*
 Template Name: イベント投稿ページ
 Template Post Type: post
@@ -47,7 +47,7 @@ Template Post Type: post
                             <div class="calendar_news_border_1">
                               <div class="calendar_month"><?php echo post_custom('month'); ?></div>
                               <div class="calendar_day">
-                                <span><?php echo post_custom('day'); ?></span><span>日</span>
+                                <span><?php echo post_custom('days'); ?></span><span>日</span>
                               </div>
                             </div>
                           </div>
@@ -67,7 +67,6 @@ Template Post Type: post
                             </div>
                             <div>
                               <img src="<?php echo get_template_directory_uri(); ?>/images/yen-sign-solid.png" alt="" />
-                              <span>参加費：<?php 
                                 <span>参加費：<?php 
                                 if(post_custom('fee') == 0) {
                                   echo '無料';
@@ -95,8 +94,7 @@ Template Post Type: post
             </div>
           </div>
         </div>
-        <?php endwhile; ?>
-        <?php endif; ?>
+        
 
         <!--  Sidebar -->
         <div class="col-lg-4" style="background-color: #2b7b8e33">
@@ -105,5 +103,6 @@ Template Post Type: post
         </div>
       </div>
     </div>
-
+    <?php endwhile; ?>
+    <?php endif; ?>
    <?php get_footer(); ?>

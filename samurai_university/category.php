@@ -54,7 +54,7 @@
                               <span>
                                 <?php 
                                 if( is_category('event') ) :
-                                  echo post_custom('day');
+                                  echo post_custom('days');
                                 else:
                                   echo get_the_date('d');
                                 endif;
@@ -66,7 +66,7 @@
                         <?php
                         if (is_category('event')) :
                         ?>
-                          <div class=calendar_hour"><?php echo post_custom('time'); ?></div>
+                          <div class="calendar_hour"><?php echo post_custom('time'); ?></div>
                         <?php
                         endif;
                         ?>
